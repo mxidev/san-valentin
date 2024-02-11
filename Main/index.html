@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/chat-bubble.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Milis y Choche</title>
+</head>
+<body>
+    <section id="nav">
+        <img src="./img/balloons.png" alt="globitos">
+        <h1 class="title">
+            ¡Feliz día del <span class="love">amor</span>, mi <span class="princess">princesita</span>!
+        </h1>
+        <img src="./img/balloons.png" alt="globitos">
+    </section> <!-- Nav -->
+
+    <section class="main">
+        <h2 id="gallery-msg">Una galería de imágenes para que recuerdes algunos de los más bonitos momentos que hemos vivido</h2>
+        <ul class="gallery-img">
+            <li class="element">
+                <img src="./img/milis/11.jpeg" alt="img1">
+            </li>
+            <li class="element">
+                <img src="./img/milis/2.jpg" alt="img2">
+            </li>
+            <li class="element">
+                <img src="./img/milis/3.jpg" alt="img3">
+            </li>
+            <li class="element">
+                <img src="./img/milis/4.jpg" alt="img4">
+            </li>
+            <li class="element">
+                <img src="./img/milis/5.jpg" alt="img5">
+            </li>
+            <li class="element">
+                <img src="./img/milis/6.jpg" alt="img6">
+            </li>
+            <li class="element">
+                <img src="./img/milis/7.jpg" alt="img7">
+            </li>
+            <li class="element">
+                <img src="./img/milis/8.jpg" alt="img8">
+            </li>
+            <li class="element">
+                <img src="./img/milis/10.jpg" alt="img9">
+            </li>
+            <li class="element">
+                <img src="./img/milis/1.jpg" alt="img10">
+            </li>
+            <li class="element">
+                <img src="./img/milis/13.jpg" alt="img12">
+            </li>
+            <li class="element">
+                <img src="./img/milis/14.jpg" alt="img13">
+            </li>
+            <li class="element">
+                <img src="./img/milis/15.jpg" alt="img14">
+            </li>
+            <li class="element">
+                <img src="./img/milis/16.jpg" alt="img15">
+            </li>
+            <li class="element">
+                <img src="./img/milis/17.jpg" alt="img16">
+            </li>
+            <li class="element">
+                <img src="./img/milis/18.jpg" alt="img17">
+            </li>
+            <li class="element">
+                <img src="./img/milis/20.jpg" alt="img18">
+            </li>
+            <li class="element">
+                <img src="./img/milis/19.jpg" alt="img19">
+            </li>
+            <li class="element">
+                <img src="./img/milis/21.jpg" alt="img21">
+            </li>
+            <li class="element">
+                <img src="./img/milis/22.jpg" alt="img22">
+            </li>
+        </ul>       
+    </section> <!-- Main -->
+
+    <section class="subsection">
+        <h3>¡Oh! Hay una cartita esperando a que la leas</h3>
+        <span>
+            <a href="#nav" id="abrir">
+                <img height="50" width="50" src="./img/love-letter.png" alt="cartita">
+            </a>
+        </span>
+    </section>
+
+    <dialog id="carta">
+        <img src="./img/hug.png" alt="abrazo" class="hug">
+        <h2>Milis <span class="love">❣</span> Choche</h2>
+        <p>Este es un día especial y, por ende, distinto al resto. Probablemente lo más bonito hubiese sido pasarlo juntos viendo películas, comiendo cositas ricas, recordando anécdotas y con un muy buen sexo como corresponde. Pero dado que no pude darte esa sorpresita, pensé en entregarte un regalo de esta forma, muy a mi manera, muy al estilo Choche jeje. Nunca está demás recordarte lo feliz que me siento estando contigo aún cuando estamos a la distancia, porque siempre surge algún tema random del que podemos estar hablando horas (a menos que me quede mimido :p), o se nos ocurre hacer algo como ver vidios, alguna película o simplemente llamarnos y hacer nada juntos. Tal como si lo hicieramos estando físicamente juntos. Y creeme que para mi ese panorama es muy genial porque a pesar de no hacer nada yo siento que estamos pasando tiempo de calidad sintiendo nuestros cuerpos (peitos :p) y dándonos mucho cariño de alguna forma.
+        </p>
+        <p>Eres una mujer muy genial para mí y me encantas mi amor, estoy muy enamorado de ti y aunque a veces no lo demuestre realmente te amo con todo mi corazón y sin ti estaría perdidísimo. Tú me inspiraste a investigar más sobre mi área de interés. Y claramente alguien normal diría "Ok? eso debe nacer de tí" pero contigo siento que todo es diferente. Literalmente pones mi mundo de cabeza y al parecer esa es la perspectiva que necesito en mi vida, porque me he sentido como nunca desde que volviste.
+        </p>
+        <p>Espero que nunca pierdas tu escencia de Milis, eso que te caracteriza tanto, como personita y como mi chiquis. Amo tu olor a flores (sí, literalmente hueles a flores), tu olor a nalguitas jiji, tu pelo, tus bellos ojos, tu sonrisa. Amo todo de ti y siento que será así por muchísisisimo tiempo porque cada vez te amo más. Ojalá que para el próximo 14 de febrero podamos estar juntos, en una playita por ejemplo.</p>
+        <p>Te amo muchísimo, bonito día bebé</p>
+        <p>Con cariño, Maxi</p>
+        <img src="./img/kiss.png" alt="beso" class="kiss">
+        <br>
+        <button id="cerrar">Cerrar cartita</button>
+    </dialog>
+
+    <script>
+        window.abrir.addEventListener('click', ()=> {
+            window.carta.showModal();
+        })
+        window.cerrar.addEventListener('click', ()=> {
+            window.carta.close();
+        })
+    </script>
+</body>
+</html>

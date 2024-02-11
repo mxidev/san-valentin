@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('./img/heart-pattern.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li img {
+    height: 20  0px;
+    width: 180px;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: rgb(231,49,57);
+    background: linear-gradient(45deg, rgba(231,49,57,1) 0%, rgba(249,98,141,1) 50%, rgba(231,49,57,1) 100%);
+    padding: 1rem;
+}
+
+.title {
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.love:hover {
+    color: rgb(255, 0, 8);
+}
+
+.princess:hover {
+    color: rgba(255, 0, 8, 0.479);
+}
+
+#gallery-msg {
+    font-size: 14pt;
+    text-align: center;
+    font-weight: 600;
+    margin: 50px;
+}
+
+.gallery-img {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    border: 5px dotted rgb(253, 47, 57);
+    margin: 50px;
+}
+
+.element {
+    list-style-type: none;
+}
+
+li img:hover {
+    animation: 0.5s both ease-out scale-up;
+}
+
+.subsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subsection img {
+    animation: jump 0.5s infinite ease-out;
+    border: 5px dotted turquoise;
+    border-radius: 25%;
+}
+
+#carta {
+    background-color: #F9628D;
+    margin: 0 20px;
+    text-align: center;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 15px;
+    border: #fd0341 6px;
+    border-style: double;
+}
+
+#carta img {
+    height: 80px;
+    width: 80px;
+}
+
+#carta p {
+    text-align: justify;
+}
+
+#carta .love {
+    color: aqua;
+}
+
+.love {
+    display: inline-block;
+    animation: jump 0.8s both infinite;
+    font-size: 16pt;
+}
+
+#cerrar {
+    background-color: #fc2461;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+
+#cerrar:hover {
+    background-color: #FFB6B9;
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
